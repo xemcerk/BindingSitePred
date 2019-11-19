@@ -61,10 +61,10 @@ for j in range(0,6):
 	averang_value_zong[j]=sum_value_zong[j]/file_count_1# 求平均值  
 Ti=transpose(mat(all_averang_value))#6*78 
 Uv=transpose(mat(averang_value_zong))#6*1 
-# print(Ti)# 公式9 公式8
+# print(Ti)
 # -----------------------------------------
 # 第2步 第3步 
-
+# 公式9 公式8 
 # Mahalanobis_Distance 是结果
 # -----------------------------------------
 
@@ -102,7 +102,7 @@ for file in files_zong: #遍历文件夹
 			if (str(line_data[0]).isdigit()):# 这里是去得到以数字开头的内容 
 				data.append(line_data)# 满足 仅仅以数字开头的 行数据， 则添加到data列表里面	 	 
 	for j in range(2,8): # 遍历 2 3 4 5 6 7 列
-		for i in range(len(data)):	# 遍历 0~len(data)-1 行
+		for i in range(len(data)):	# 遍历 0~len(data)-1 行 
 			sum_value[j-2]=sum_value[j-2]+float(data[i][j])	# 第j列的所有行的内容相加 
 		averang_value[j-2]=sum_value[j-2]/len(data) # 得到平均值
 	data=[] # 这里要清空data列表，因为单个文件都会进行列表添加append。而求平均值是对单个文件做的。 
@@ -119,8 +119,8 @@ for i in range(file_count_zong):
 
 # -----------------------------------------
 # 第5步 
-
-# ----------------------------------------- # 公式5
+# 公式5 
+# ----------------------------------------- 
 #这里的Pv还是小文件夹的文件数目,而不是总的文件夹的文件数目
 
 Pv=file_count_1

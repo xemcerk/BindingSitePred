@@ -1,3 +1,4 @@
+#%%
 import os
 import xlwt 
 import xlrd
@@ -34,6 +35,7 @@ for file in files_1:
 for file in files_zong: 
 	file_count_zong = file_count_zong+1 
 
+#%%
 # -----------------------------------------
 # 第1步 
 # 公式7

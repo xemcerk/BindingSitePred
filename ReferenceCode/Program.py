@@ -7,7 +7,7 @@ import math   # 导入 math 模块
 import pandas as pd
 from numpy import *  
 
-
+#%%
 # 第一个文件------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # 第一个文件------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # 第一个文件------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -19,12 +19,12 @@ averang_value_zong=[0]*6
 all_averang_value=[] 
 
 # 文件路径
-path_1= "File/1" 
-path_zong= "File/HUIZONG" 
+path_1= "ReferenceCode/File/1" 
+path_zong= "ReferenceCode/File/HUIZONG" 
 
 # 文件路径
-files_1= os.listdir("File/1") 
-files_zong= os.listdir("File/HUIZONG") 
+files_1= os.listdir(path_1) 
+files_zong= os.listdir("ReferenceCode/File/HUIZONG") 
 
 # 这里是统计每个文件夹的文件个数
 file_count_1= 0
@@ -63,7 +63,9 @@ for j in range(0,6):
 	averang_value_zong[j]=sum_value_zong[j]/file_count_1# 求平均值  
 Ti=transpose(mat(all_averang_value))#6*78 
 Uv=transpose(mat(averang_value_zong))#6*1 
-# print(Ti)
+print(Ti)
+
+#%%
 # -----------------------------------------
 # 第2步 第3步 
 # 公式9 公式8 
@@ -89,7 +91,7 @@ for i in range(0,6):
 # ----------------------------------------- 
 
 # 这里是总的文件夹
-files_zong= os.listdir("File/HUIZONG") #得到文件夹下的所有文件名称 
+files_zong= os.listdir("ReferenceCode/File/HUIZONG") #得到文件夹下的所有文件名称 
 # 这里的求总文件里的Ti
 data = []
 sum_value=[0]*6 
@@ -147,12 +149,12 @@ averang_value_zong=[0]*6
 all_averang_value=[] 
 
 # 文件路径
-path_2= "File/2" 
-path_zong= "File/HUIZONG" 
+path_2= "ReferenceCode/File/2" 
+path_zong= "ReferenceCode/File/HUIZONG" 
 
 # 文件路径
-files_2= os.listdir("File/2") 
-files_zong= os.listdir("File/HUIZONG") 
+files_2= os.listdir("ReferenceCode/File/2") 
+files_zong= os.listdir("ReferenceCode/File/HUIZONG") 
 
 # 这里是统计每个文件夹的文件个数
 file_count_2= 0
@@ -216,7 +218,7 @@ for i in range(0,6):
 # ----------------------------------------- 
 
 # 这里是总的文件夹
-files_zong= os.listdir("File/HUIZONG") #得到文件夹下的所有文件名称 
+files_zong= os.listdir("ReferenceCode/File/HUIZONG") #得到文件夹下的所有文件名称 
 # 这里的求总文件里的Ti
 data = []
 sum_value=[0]*6 
@@ -275,12 +277,12 @@ averang_value_zong=[0]*6
 all_averang_value=[] 
 
 # 文件路径
-path_3= "File/3" 
-path_zong= "File/HUIZONG" 
+path_3= "ReferenceCode/File/3" 
+path_zong= "ReferenceCode/File/HUIZONG" 
 
 # 文件路径
-files_3= os.listdir("File/3") 
-files_zong= os.listdir("File/HUIZONG") 
+files_3= os.listdir("ReferenceCode/File/3") 
+files_zong= os.listdir("ReferenceCode/File/HUIZONG") 
 
 # 这里是统计每个文件夹的文件个数
 file_count_3= 0
@@ -344,7 +346,7 @@ for i in range(0,6):
 # ----------------------------------------- 
 
 # 这里是总的文件夹
-files_zong= os.listdir("File/HUIZONG") #得到文件夹下的所有文件名称 
+files_zong= os.listdir("ReferenceCode/File/HUIZONG") #得到文件夹下的所有文件名称 
 # 这里的求总文件里的Ti
 data = []
 sum_value=[0]*6 
@@ -403,12 +405,12 @@ averang_value_zong=[0]*6
 all_averang_value=[] 
 
 # 文件路径
-path_4= "File/4" 
-path_zong= "File/HUIZONG" 
+path_4= "ReferenceCode/File/4" 
+path_zong= "ReferenceCode/File/HUIZONG" 
 
 # 文件路径
-files_4= os.listdir("File/4") 
-files_zong= os.listdir("File/HUIZONG") 
+files_4= os.listdir("ReferenceCode/File/4") 
+files_zong= os.listdir("ReferenceCode/File/HUIZONG") 
 
 # 这里是统计每个文件夹的文件个数
 file_count_4= 0
@@ -472,7 +474,7 @@ for i in range(0,6):
 # ----------------------------------------- 
 
 # 这里是总的文件夹
-files_zong= os.listdir("File/HUIZONG") #得到文件夹下的所有文件名称 
+files_zong= os.listdir("ReferenceCode/File/HUIZONG") #得到文件夹下的所有文件名称 
 # 这里的求总文件里的Ti
 data = []
 sum_value=[0]*6 

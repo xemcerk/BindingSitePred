@@ -9,3 +9,8 @@ dependencies:
   - xlrd
   - xlwt
   - xlutils
+  - scikit-learn
+  - matplotlib
+  - keras-gpu
+  - pip:
+    - xgboost
